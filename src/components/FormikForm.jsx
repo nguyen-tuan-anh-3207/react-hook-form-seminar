@@ -45,14 +45,12 @@ const FormikForm = () => {
       >
         {({ errors, touched }) => (
           <Form>
-            <div className='form-group'>
+            <div className='form-group mb-2'>
               <label htmlFor='email'>Email</label>
               <Field
                 name='email'
                 placeholder='Enter email'
-                className={`form-control ${
-                  touched.email && errors.email ? 'is-invalid' : ''
-                }`}
+                className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                 validate={validateEmail}
               />
               <ErrorMessage
@@ -62,7 +60,7 @@ const FormikForm = () => {
               />
             </div>
 
-            <div className='form-group'>
+            <div className='form-group mb-2'>
               <label htmlFor='password'>Password</label>
               <Field
                 name='password'

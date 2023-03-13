@@ -8,8 +8,8 @@ function App() {
   return (
     <div className='App'>
       {/* <FormState /> */}
-      <FormikForm />
-      {/* <HookForm /> */}
+      {/* <FormikForm /> */}
+      <HookForm />
     </div>
   )
 }
